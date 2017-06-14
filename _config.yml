@@ -7,7 +7,7 @@ data_dir: ./_data
 collections: null
 
 # Handling Reading
-safe:         false
+safe:         true
 include:      [".htaccess", "_pages"]
 exclude:      []
 keep_files:   [".git", ".svn"]
