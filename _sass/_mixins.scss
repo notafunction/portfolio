@@ -1,0 +1,11 @@
+@mixin embed-font($font-name, $font-filepath-and-name, $font-weight){
+  @font-face {
+    font-family: $font-name;
+    // src: url($font-filepath-and-name+".eot"); /* IE9 Compat Modes */
+    // url($font-filepath-and-name+".eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */
+    src: url($font-filepath-and-name+".woff") format('woff'); /* Modern Browsers */
+        //  url($font-filepath-and-name+".ttf")  format('truetype'), /* Safari, Android, iOS */
+        //  url($font-filepath-and-name+".svg#svgFontName") format('svg'); /* Legacy iOS */
+    font-weight: $font-weight;
+    }
+}

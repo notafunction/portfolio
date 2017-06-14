@@ -1,6 +1,21 @@
 ---
 ---
 
-
-
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
 @import 'bootstrap/bootstrap';
+
+// override bootstrap's max-width property in it's container.
+.container { max-width: 600px; }
+
+h1 {
+  font-family: Avenir-Heavy, sans-serif;
+  font-size: 26px;
+  line-height: 40px;
+
+  .light {
+    font-family: Avenir-Light, sans-serif;
+    font-weight: 400;
+  }
+}
