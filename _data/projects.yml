@@ -1,8 +1,7 @@
 - name: Sindelar & Rudy
   url: http://sindelarrudybridalbeauty.com
-  date:
-    start: January 2014
-    end: Present
+  description: Leading product and brand design. Providing direction and hands-on work. Working with cross-functional teams on product, brand, and business initiatives. Work includes website, desktop, and mobile app.
+  date: Jan 2014 to Present
   tags:
     - wordpress
     - html5
@@ -10,6 +9,10 @@
 
 - name: Recipi
   url: https://recipi.herokuapp.com
+  description: A live search engine consuming an api to deliver filterable results.
+  date: Feb 2017 to Present
   tags:
+    - nodejs
+    - webpack
     - react
     - redux

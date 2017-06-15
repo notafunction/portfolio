@@ -7,6 +7,7 @@
 @import 'grid';
 //@import 'bootstrap/bootstrap';
 
+// Body defaults
 body {
   font-family: Avenir-Light, sans-serif;
   background: #f7f6f5;
@@ -25,14 +26,50 @@ body {
   }
 }
 
-section:not(.intro) {
-  border-top: solid 1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 60px;
-  @media only screen and (max-width: 500px) {
-    margin-bottom: 40px;
+a {
+  color: #0c85ac;
+  text-decoration: none;
+  transition: color .25s;
+  &:hover {
+    color: #212429;
+    transition: color .25s;
   }
 }
 
-.intro {
-  margin: 100px 0;
+// Sections
+section {
+  &.intro {
+    margin: 100px 0;
+    @media only screen and (max-width: 500px) {
+      margin: 20px 0 40px 0;
+    }
+  }
+  &:not(.intro) {
+    border-top: solid 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+    @media only screen and (max-width: 500px) {
+      margin-bottom: 40px;
+    }
+  }
+  &.footer {
+    text-align: center;
+    margin: 75px auto;
+    max-width: 260px;
+    a {
+      color: #0c85ac;
+      &:hover {
+        color: #212429;
+      }
+      @media only screen and (max-width: 500px) {
+        display: block;
+        padding: 10px;
+      }
+    }
+    p {
+      font-family: Avenir-Medium, sans-serif;
+      font-size: 18px;
+      color: #222427;
+      line-height: 30px;
+    }
+  }
 }

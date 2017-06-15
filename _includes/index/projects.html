@@ -2,15 +2,16 @@
   <h4>Projects</h4>
   {% for project in site.data.projects %}
   <div class="col-left">
-    {{ project.date.start }} to {{ project.date.end }}
+    <span>{{ project.date }}</span>
   </div>
   <div class="col-right">
     <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
     <h3>
       {% for tag in project.tags %}
-      <i>{{ tag }}</i> 
+        <i>{{ tag }}</i> 
       {% endfor %}
     </h3>
+    <p>{{ project.description }}</p>
   </div>
   {% endfor %}
 </section>
