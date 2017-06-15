@@ -1,7 +1,16 @@
 <section class="projects">
   <h4>Projects</h4>
-  
   {% for project in site.data.projects %}
-    {{ project.name }}
+  <div class="col-left">
+    {{ project.date.start }} to {{ project.date.end }}
+  </div>
+  <div class="col-right">
+    <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
+    <h3>
+      {% for tag in project.tags %}
+      <i>{{ tag }}</i> 
+      {% endfor %}
+    </h3>
+  </div>
   {% endfor %}
 </section>

@@ -1,5 +1,8 @@
 - name: Sindelar & Rudy
   url: http://sindelarrudybridalbeauty.com
+  date:
+    start: January 2014
+    end: Present
   tags:
     - wordpress
     - html5
