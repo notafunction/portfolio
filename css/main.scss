@@ -10,8 +10,8 @@
 // Body defaults
 body {
   font-family: Avenir-Light, sans-serif;
-  background: #f7f6f5;
-  color: #212429;
+  background: $bg-color;
+  color: $color;
   margin: 0;
   text-rendering: optimizeLegibility;
   background-size: 100%;
@@ -20,18 +20,18 @@ body {
   animation: fadein 1s ease;
   padding: 20px;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: $breakpoint) {
     background-size: 100%;
     background-position: 0 0;
   }
 }
 
 a {
-  color: #0c85ac;
+  color: $link-color;
   text-decoration: none;
   transition: color .25s;
   &:hover {
-    color: #212429;
+    color: $link-hover-color;
     transition: color .25s;
   }
 }
@@ -40,14 +40,14 @@ a {
 section {
   &.intro {
     margin: 100px 0;
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: $breakpoint) {
       margin: 20px 0 40px 0;
     }
   }
   &:not(.intro) {
     border-top: solid 1px rgba(0, 0, 0, 0.1);
     margin-bottom: 60px;
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: $breakpoint) {
       margin-bottom: 40px;
     }
   }
@@ -56,11 +56,11 @@ section {
     margin: 75px auto;
     max-width: 260px;
     a {
-      color: #0c85ac;
+      color: $link-color;
       &:hover {
-        color: #212429;
+        color: $link-hover-color;
       }
-      @media only screen and (max-width: 500px) {
+      @media only screen and (max-width: $breakpoint) {
         display: block;
         padding: 10px;
       }
@@ -68,7 +68,7 @@ section {
     p {
       font-family: Avenir-Medium, sans-serif;
       font-size: 18px;
-      color: #222427;
+      color: $color;
       line-height: 30px;
     }
   }

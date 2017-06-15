@@ -1,29 +1,29 @@
-@include embed-font("Avenir-Light", "fonts/avenir_light", 100);
-@include embed-font("Avenir-Medium", "fonts/avenir_medium", 500);
-@include embed-font("Avenir-Heavy", "fonts/avenir_heavy", 700);
+@include embed-font($lt-font, $lt-font-path, $lt-font-weight);
+@include embed-font($med-font, $med-font-path, $med-font-weight);
+@include embed-font($hvy-font, $hvy-font-path, $hvy-font-weight);
 
 h1 {
-  font-family: Avenir-Heavy, sans-serif;
+  font-family: $hvy-font, $fallback-font;
   font-size: 26px;
   line-height: 40px;
 }
 
 h4 {
-  font-family: Avenir-Heavy, sans-serif;
+  font-family: $hvy-font, $fallback-font;
   font-size: 14px;
-  color: #baada3;
+  color: $section-header-color;
   margin-bottom: 40px;
   margin-top: 25px;
 }
 
 p {
-  font-family: Avenir-Light, sans-serif;
+  font-family: $lt-font, $fallback-font;
   font-size: 15px;
-  color: #222427;
+  color: $color;
   line-height: 25px;
 }
 
 .light {
-    font-family: Avenir-Light, sans-serif;
+    font-family: $lt-font, $fallback-font;
     font-weight: 400;
   }

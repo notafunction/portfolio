@@ -1,0 +1,24 @@
+// Breakpoint
+$breakpoint: 500px;
+
+// Fonts
+$lt-font: "Avenir-Light";
+$lt-font-path: "fonts/avenir_light";
+$lt-font-weight: 100;
+
+$med-font: "Avenir-Medium";
+$med-font-path: "fonts/avenir_medium";
+$med-font-weight: 500;
+
+$hvy-font: "Avenir-Heavy";
+$hvy-font-path: "fonts/avenir_heavy";
+$hvy-font-weight: 700;
+
+$fallback-font: san-serif;
+
+// Colors
+$bg-color: rgb(239, 236, 202);
+$color: rgb(0, 47, 47); // <body> font color
+$link-color: rgb(4, 99, 128);
+$link-hover-color: $color;
+$section-header-color: rgb(167, 163, 126);
