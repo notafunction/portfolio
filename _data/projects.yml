@@ -12,7 +12,7 @@
   description: A live search engine consuming an api to deliver filterable results.
   date: Feb 2017 to Present
   tags:
-    - nodejs
-    - webpack
     - react
     - redux
+    - webpack
+    - async
