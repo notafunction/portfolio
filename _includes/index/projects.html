@@ -1,1 +1,7 @@
-<!-- index/projects.html -->
+<section class="projects">
+  <h4>Projects</h4>
+  
+  {% for project in site.data.projects %}
+    {{ project.name }}
+  {% endfor %}
+</section>

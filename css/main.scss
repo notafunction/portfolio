@@ -3,19 +3,41 @@
 
 @import 'variables';
 @import 'mixins';
-@import 'fonts';
-@import 'bootstrap/bootstrap';
+@import 'typography';
+//@import 'bootstrap/bootstrap';
+
+body {
+  font-family: Avenir-Light, sans-serif;
+  background: #f7f6f5;
+  color: #212429;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  background-size: 100%;
+  background-position: 0 -75px;
+  background-repeat: no-repeat;
+  animation: fadein 1s ease;
+  padding: 20px;
+
+  @media only screen and (max-width: 500px) {
+    background-size: 100%;
+    background-position: 0 0;
+  }
+}
 
 // override bootstrap's max-width property in it's container.
-.container { max-width: 600px; }
+.container {
+  max-width: 600px;
+  margin: auto;
+}
 
-h1 {
-  font-family: Avenir-Heavy, sans-serif;
-  font-size: 26px;
-  line-height: 40px;
-
-  .light {
-    font-family: Avenir-Light, sans-serif;
-    font-weight: 400;
+section:not(.intro) {
+  border-top: rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  @media only screen and (max-width: 500px) {
+    margin-bottom: 40px;
   }
+}
+
+.intro {
+  margin: 100px 0;
 }

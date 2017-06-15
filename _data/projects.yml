@@ -1,0 +1,12 @@
+- name: Sindelar & Rudy
+  url: http://sindelarrudybridalbeauty.com
+  tags:
+    - wordpress
+    - html5
+    - css3
+
+- name: Recipi
+  url: https://recipi.herokuapp.com
+  tags:
+    - react
+    - redux
