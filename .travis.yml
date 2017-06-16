@@ -2,6 +2,8 @@ language: ruby
 rvm:
   - 2.4.0
 
+cache: bundler
+
 install: bundle install
 script: jekyll build && htmlproofer ./_site --disable-external
 
