@@ -1,14 +1,17 @@
 language: ruby
 rvm:
-  - 2.4.0
-
+- 2.4.0
 cache: bundler
-
-install: bundle install
-script: jekyll build && htmlproofer ./_site --disable-external
-
+install:
+  - bundle install
+script:
+  - "./scripts/cibuild.sh"
+  - "html-proofer ./_site --disable-external"
+after_success:
+  - "./scripts/deploy.sh"
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-
-sudo: false # route your build to the container-based infrastructure for a faster build
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  # Deploy token
+  - secure: nauvyj0ycLCgir/lqOFSeBEuWc/86A5PWlDbsn0CIGcFbRhcVBsYzmUhL2S09nXnVKQM6lrB7zIUS0yBHR23bkELKf5NLH0n1XpyRx/VXf26TGoNnUzuKsFUs7lFGfNqz3cwX42F+MZEmcB57a/TWviy/ttlAYj6uWqOI5tValiRAAjAFDQpQwEW63keYQxQVSi3ptglbwFz/oivBd4PwKUGJQnJYGnFX7KV0uyBb6s2boJ6N6Ma/kpzhWxwRZ7/HtF5foIjVapcEgaQo9CRSU7tZrLRPE5ehjDFuvtk1LTBa3HyzebtB9YFgjap8flMt9Get6x5vFnb8UpUccWxDlq3ge2ktlZnz1XfaU4VWH5sSIQsRFYuq7EIGdopEp5quiTjszFqvdkk1cTwq878Ni3PVr+E6mwR44E3EzwzMzQr4L7nIZUYBHl0GZZFqNYUptmKPR6jEqqNH+N4UbGtK65a3oDlp3z5pZ7epB2Ywdv5gRweAMEQPkHZqBRMha2G3dlDb4+ix3B3tjB6k10RMI9aim8Jvxh3s45wncNL5sVu1P1OiVSPbaLk9kJAwr+9As24FC/3XYyxg3xyQNkUrxqnIcL7IAGvSUwPV7vqdovklSF66ixd/MlREbDBadoTapIpVifFZe/dHCwS0URSJm/yp6ZJmRVBy1vP2YspVB0=
+sudo: false
