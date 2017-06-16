@@ -8,4 +8,5 @@ bundle exec htmlproofer \
   --file-ignore /.git/ \
   --check-favicon \
   --check-html \
-  --check-opengraph
+  --check-opengraph \
+  --disable-external

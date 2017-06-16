@@ -6,8 +6,8 @@ install:
   - bundle install
 script:
   - "./scripts/build.sh"
-after_success:
   - "./scripts/htmltest.sh"
+after_success:
   - "./scripts/deploy.sh"
 env:
   global:
