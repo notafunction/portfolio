@@ -5,7 +5,7 @@ cache: bundler
 install:
   - bundle install
 script:
-  - "./scripts/cibuild.sh"
+  - "./scripts/build.sh"
   - "html-proofer ./_site --disable-external"
 after_success:
   - "./scripts/deploy.sh"
