@@ -1,7 +1,6 @@
 - name: Sindelar & Rudy
   url: http://sindelarrudybridalbeauty.com
   description: A wordpress theme modification.
-  date: Jan 2014 to Present
   tags:
     - wordpress
     - html5
@@ -13,10 +12,19 @@
     A live search engine consuming an api to deliver filterable results. 
     Built as a mission critical application using development and production webpack builds,
     TravisCI integration, and heroku deployment.
-    
-  date: Feb 2017 to Present
   tags:
     - react
     - redux
     - webpack
-    - async
+
+- name: TicTacTuring
+
+  url: https://tictacturing-ml.herokuapp.com
+  description: |
+    A simple tactactoe game against a computer opponent. Uses react, relay, and graphQl to store user
+    accounts and past games and outcomes.
+  tags:
+    - react
+    - relay
+    - graphQl
+    - auth0
