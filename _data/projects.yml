@@ -1,11 +1,3 @@
-- name: Sindelar & Rudy
-  url: http://sindelarrudybridalbeauty.com
-  description: A wordpress theme modification.
-  tags:
-    - wordpress
-    - html5
-    - css3
-
 - name: Recipi
   url: https://recipi.herokuapp.com
   description: |
