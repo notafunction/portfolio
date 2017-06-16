@@ -3,34 +3,33 @@
   margin: auto;
 }
 
-.col-left {
+.project-tags {
   width: 20%;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
   font-family: $font, sans-serif;
   font-size: 15px;
+  color: $color;
+  letter-spacing: 1px;
+  padding: 35px 0 0 20px;
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  // color: $color;
-  letter-spacing: 1px;
-  padding-right: 20px;
-  @media only screen and (max-width: 500px) {
-    width: 100%;
-    margin-bottom: 5px;
+  @media only screen and (max-width: $breakpoint) {
+    display: none;
   }
 }
 
-.col-right {
+.project-info {
   width: 79%;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
   margin-bottom: 20px;
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: $breakpoint) {
     width: 100%;
     margin-bottom: 10px;
   }
@@ -38,12 +37,12 @@
     margin: 0;
     font-family: $title-font, serif;
     font-size: 18px;
-    color: #222427;
+    color: $color;
   }
   h3 {
     margin-top: 0;
     font-family: $title-font, serif;
     font-size: 15px;
-    color: #222427;
+    color: $color;
   }
 }

@@ -1,16 +1,16 @@
 <section class="projects">
   <h4>Projects</h4>
   {% for project in site.data.projects %}
-  <div class="col-left">
+  <div class="project-info">
+    <h2><a href="{{ project.url }}" target="_blank">{{ project.name }}</a></h2>
+    <p>{{ project.description }}</p>
+  </div>
+  <div class="project-tags">
     <ul>
       {% for tag in project.tags %}
         <li class="light">{{ tag }}</li>
       {% endfor %}
     </ul>
-  </div>
-  <div class="col-right">
-    <h2><a href="{{ project.url }}" target="_blank">{{ project.name }}</a></h2>
-    <p>{{ project.description }}</p>
   </div>
   {% endfor %}
 </section>
