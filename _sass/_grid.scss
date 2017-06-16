@@ -3,6 +3,10 @@
   margin: auto;
 }
 
+.project {
+  padding: 5px 0 10px 0;
+}
+
 .project-tags {
   width: 20%;
   box-sizing: border-box;
@@ -12,7 +16,6 @@
   font-size: 15px;
   color: $color;
   letter-spacing: 1px;
-  padding: 35px 0 0 20px;
   ul {
     list-style: none;
     margin: 0;
@@ -28,10 +31,15 @@
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 20px;
   @media only screen and (max-width: $breakpoint) {
     width: 100%;
     margin-bottom: 10px;
+  }
+  p {
+    padding-right: 20px;
+    @media only screen and (max-width: $breakpoint) {
+      padding: 0;
+    }
   }
   h2 {
     margin: 0;
