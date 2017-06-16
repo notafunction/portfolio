@@ -8,7 +8,7 @@
   box-sizing: border-box;
   display: inline-block;
   vertical-align: top;
-  font-family: Avenir-Light, sans-serif;
+  font-family: $font, sans-serif;
   font-size: 15px;
   // color: $color;
   letter-spacing: 1px;
@@ -31,13 +31,13 @@
   }
   h2 {
     margin: 0;
-    font-family: Avenir-Heavy, sans-serif;
+    font-family: $title-font, serif;
     font-size: 18px;
     color: #222427;
   }
   h3 {
     margin-top: 0;
-    font-family: Avenir-Heavy, sans-serif;
+    font-family: $title-font, serif;
     font-size: 15px;
     color: #222427;
   }

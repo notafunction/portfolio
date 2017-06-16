@@ -5,11 +5,10 @@
 @import 'mixins';
 @import 'typography';
 @import 'grid';
-//@import 'bootstrap/bootstrap';
 
 // Body defaults
 body {
-  font-family: Avenir-Light, sans-serif;
+  font-family: $font, sans-serif;
   background: $bg-color;
   color: $color;
   margin: 0;
@@ -66,7 +65,7 @@ section {
       }
     }
     p {
-      font-family: Avenir-Medium, sans-serif;
+      font-family: $title-font, serif;
       font-size: 18px;
       color: $color;
       line-height: 30px;

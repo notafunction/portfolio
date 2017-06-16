@@ -1,15 +1,11 @@
-@include embed-font($lt-font, $lt-font-path, $lt-font-weight);
-@include embed-font($med-font, $med-font-path, $med-font-weight);
-@include embed-font($hvy-font, $hvy-font-path, $hvy-font-weight);
-
 h1 {
-  font-family: $hvy-font, $fallback-font;
+  font-family: $title-font, serif;
   font-size: 26px;
   line-height: 40px;
 }
 
 h4 {
-  font-family: $hvy-font, $fallback-font;
+  font-family: $title-font, serif;
   font-size: 14px;
   color: $section-header-color;
   margin-bottom: 40px;
@@ -17,13 +13,13 @@ h4 {
 }
 
 p {
-  font-family: $lt-font, $fallback-font;
+  font-family: $font, sans-serif;
   font-size: 15px;
   color: $color;
   line-height: 25px;
 }
 
 .light {
-    font-family: $lt-font, $fallback-font;
-    font-weight: 400;
-  }
+  font-family: $font, sans-serif;
+  font-weight: 400;
+}
