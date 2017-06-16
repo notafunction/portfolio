@@ -59,16 +59,17 @@ section {
       &:hover {
         color: $link-hover-color;
       }
-      @media only screen and (max-width: $breakpoint) {
-        display: block;
-        padding: 10px;
-      }
     }
     p {
       font-family: $title-font, serif;
       font-size: 18px;
       color: $color;
       line-height: 30px;
+      &.social {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+      }
     }
   }
 }
