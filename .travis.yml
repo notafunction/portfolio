@@ -6,8 +6,8 @@ install:
   - bundle install
 script:
   - "./scripts/build.sh"
-  - "html-proofer ./_site --disable-external"
 after_success:
+  - "./scripts/htmltest.sh"
   - "./scripts/deploy.sh"
 env:
   global:
