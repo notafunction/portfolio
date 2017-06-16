@@ -10,6 +10,11 @@
   vertical-align: top;
   font-family: $font, sans-serif;
   font-size: 15px;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
   // color: $color;
   letter-spacing: 1px;
   padding-right: 20px;
