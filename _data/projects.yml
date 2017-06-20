@@ -14,7 +14,7 @@
   url: https://tictacturing-ml.herokuapp.com
   description: |
     A simple tactactoe game against a computer opponent. Uses react, relay, and graphQl to store user
-    accounts and past games and outcomes.
+    accounts, past games, and win/loss statistics.
   tags:
     - react
     - relay
