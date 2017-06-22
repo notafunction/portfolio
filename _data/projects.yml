@@ -3,11 +3,11 @@
   description: |
     A live search engine consuming an api to deliver filterable results. 
     Built as a mission critical application using development and production webpack builds,
-    TravisCI integration, and heroku deployment.
+    TravisCI integration, and Heroku deployment.
   tags:
     - react
-    - redux
     - webpack
+    - blueprintjs
 
 - name: TicTacTuring
 
@@ -18,5 +18,5 @@
   tags:
     - react
     - relay
-    - graphQl
+    - graphQL
     - auth0
