@@ -5,18 +5,26 @@
     Built as a mission critical application using development and production webpack builds,
     TravisCI integration, and heroku deployment.
   tags:
-    - react
-    - redux
-    - webpack
+    - React.js
+    - React-Redux
+    - Webpack
 
 - name: TicTacTuring
-
   url: https://tictacturing-ml.herokuapp.com
   description: |
     A simple tactactoe game against a computer opponent. Uses react, relay, and graphQl to store user
     accounts, past games, and win/loss statistics.
   tags:
-    - react
-    - relay
-    - graphQl
-    - auth0
+    - React.js
+    - Relay.js
+    - GraphQL
+    - Auth0
+
+- name: Evergreen Events
+  url: https://www.evergreenevent.net
+  description: |
+    An online presence for a local wedding planning business. Built with mobile devices in mind with responsive design and
+    web optimized images. Built using Gulp.js and SCSS stylesheets.
+  tags:
+    - Sass
+    - Gulp.js
