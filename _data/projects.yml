@@ -5,9 +5,15 @@
     Built as a mission critical application using development and production webpack builds,
     TravisCI integration, and Heroku deployment.
   tags:
+<<<<<<< HEAD
     - React.js
     - React-Redux
     - Webpack
+=======
+    - react
+    - webpack
+    - blueprintjs
+>>>>>>> da3dcfdf4cf5255470c5edc8cabba2a52a94f6e8
 
 - name: TicTacTuring
   url: https://tictacturing-ml.herokuapp.com
@@ -15,6 +21,7 @@
     A simple tactactoe game against a computer opponent. Uses react, relay, and graphQl to store user
     accounts, past games, and win/loss statistics.
   tags:
+<<<<<<< HEAD
     - React.js
     - Relay.js
     - GraphQL
@@ -28,3 +35,9 @@
   tags:
     - Sass
     - Gulp.js
+=======
+    - react
+    - relay
+    - graphQL
+    - auth0
+>>>>>>> da3dcfdf4cf5255470c5edc8cabba2a52a94f6e8
