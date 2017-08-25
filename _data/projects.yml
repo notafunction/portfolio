@@ -21,7 +21,7 @@
     - Auth0
 
 - name: Evergreen Events
-  url: https://www.evergreenevent.net
+  url: http://www.evergreenevent.net
   description: |
     An online presence for a local wedding planning business. Built with mobile devices in mind with responsive design and
     web optimized images. Built using Gulp.js and SCSS stylesheets.
