@@ -1,0 +1,6 @@
+- name: projects
+  url: '/projects/'
+- name: now
+  url: '/now/'
+- name: blog
+  url: '/blog/'

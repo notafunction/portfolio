@@ -1,28 +1,28 @@
 ---
 ---
-
 @import 'variables';
 @import 'mixins';
 @import 'typography';
+@import 'icons';
 @import 'grid';
+@import 'header';
+@import 'footer';
+@import 'projects';
 
-// Body defaults
 body {
   font-family: $font, sans-serif;
   background: $bg-color;
   color: $color;
   margin: 0;
   text-rendering: optimizeLegibility;
-  background-size: 100%;
-  background-position: 0 -75px;
-  background-repeat: no-repeat;
-  animation: fadein 1s ease;
-  padding: 20px;
-
-  @media only screen and (max-width: $breakpoint) {
-    background-size: 100%;
-    background-position: 0 0;
+  animation: fadein 0.5s ease;
+  @media screen and (max-width: 620px) {
+    padding: 0 10px;
   }
+}
+
+main {
+  grid-area: main;
 }
 
 a {
@@ -35,41 +35,15 @@ a {
   }
 }
 
-// Sections
 section {
-  &.intro {
-    margin: 100px 0;
-    @media only screen and (max-width: $breakpoint) {
-      margin: 20px 0 40px 0;
-    }
+  @media only screen and (max-width: $breakpoint) {
+    margin-bottom: 40px;
   }
-  &:not(.intro) {
-    border-top: solid 1px rgba(0, 0, 0, 0.1);
-    margin-bottom: 60px;
-    @media only screen and (max-width: $breakpoint) {
-      margin-bottom: 40px;
-    }
-  }
-  &.footer {
-    text-align: center;
-    margin: 75px auto;
-    max-width: 260px;
-    a {
-      color: $link-color;
-      &:hover {
-        color: $link-hover-color;
-      }
-    }
-    p {
-      font-family: $title-font, serif;
-      font-size: 18px;
-      color: $color;
-      line-height: 30px;
-      &.social {
-        display: flex;
-        align-content: center;
-        justify-content: space-around;
-      }
-    }
+}
+
+.intro {
+  p {
+    line-height: 2.5rem;
+    font-size: 24px;
   }
 }

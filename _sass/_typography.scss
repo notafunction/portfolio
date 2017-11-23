@@ -1,13 +1,19 @@
+h1, h2, h3, h4, h5 { font-family: $title-font, serif; }
+
 h1 {
-  font-family: $title-font, serif;
   font-size: 26px;
   line-height: 40px;
 }
 
-h4 {
-  font-family: $title-font, serif;
+h3 {
+  font-family: $font, sans-serif;
   font-size: 14px;
-  color: $section-header-color;
+  color: $header-color;
+}
+
+h4 {
+  font-size: 14px;
+  color: $header-color;
   margin-top: 25px;
 }
 
@@ -16,33 +22,9 @@ p {
   font-size: 15px;
   color: $color;
   line-height: 25px;
-  .project-info & {
-    margin: 0;
-  }
 }
 
 .light {
   font-family: $font, sans-serif;
   font-weight: 400;
-  .project-tags & {
-    color: rgba(0,0,0,0.1);
-    transition: color .25s;
-  }
-  .project:hover & {
-    color: rgba(0, 0, 0, 1);
-    transition: color .25s;
-  }
-}
-
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-.icon-social {
-  font-size: 32px;
-  margin: 10px 5px;
 }

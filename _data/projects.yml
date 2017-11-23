@@ -1,13 +1,28 @@
+- name: Markdown Editor
+  url: https://codepen.io/notafunction/full/MvLyvJ
+  description: |
+    Real-time previewing of markdown styled content.
+  tags:
+    - react
+
+- name: Memory Game
+  url: https://codepen.io/notafunction/full/JyaejX
+  description: |
+    Memory game with increasing difficulty and a 'hardcore' mode.
+  tags:
+    - jquery
+
 - name: Recipi
   url: https://recipi.herokuapp.com
+  repo: https://github.com/notafunction/recipi.git
   description: |
     A live search engine consuming an api to deliver filterable results. 
     Built as a mission critical application using development and production webpack builds,
     TravisCI integration, and Heroku deployment.
   tags:
-    - React.js
-    - React-Redux
-    - Webpack
+    - react
+    - redux
+    - webpack
 
 - name: TicTacTuring
   url: https://tictacturing-ml.herokuapp.com
@@ -15,10 +30,9 @@
     A simple tactactoe game against a computer opponent. Uses react, relay, and graphQl to store user
     accounts, past games, and win/loss statistics.
   tags:
-    - React.js
-    - Relay.js
-    - GraphQL
-    - Auth0
+    - react
+    - graphql
+    - auth0
 
 - name: Evergreen Events
   url: http://www.evergreenevent.net
@@ -26,5 +40,5 @@
     An online presence for a local wedding planning business. Built with mobile devices in mind with responsive design and
     web optimized images. Built using Gulp.js and SCSS stylesheets.
   tags:
-    - Sass
-    - Gulp.js
+    - sass
+    - gulp

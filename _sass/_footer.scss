@@ -1,0 +1,17 @@
+footer {
+  grid-area: footer;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 5px;
+  text-align: center;
+  a {
+    color: $link-color;
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+  div {
+    font-family: $title-font, serif;
+    font-size: 18px;
+    color: $color;
+  }
+}

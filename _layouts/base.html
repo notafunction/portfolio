@@ -2,14 +2,17 @@
 <html>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Lora:700|Montserrat:300" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <title>{{ page.title }}</title>
     {% include layouts/meta.html %}
 </head>
 <body>
-    {% include layouts/header.html %}
-    <main class="container">
-        {{ content }}
-    </main>
-    {% include layouts/footer.html %}
+    <div class="container">
+        {% include layouts/header.html %}
+        <main>
+            {{ content }}
+        </main>
+        {% include layouts/footer.html %}
+    </div>
 </body>
 </html>

@@ -1,0 +1,41 @@
+.project {
+  padding: 5px 0 10px 0;
+}
+
+.project__tags {
+  display: block;
+  @media only screen and (max-width: $breakpoint) {
+    display: none;
+  }
+
+  h3 {
+    margin-bottom: 5px;
+  }
+}
+
+.project__desc {
+  box-sizing: border-box;
+  display: inline-block;
+  @media only screen and (max-width: $breakpoint) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  p {
+    padding-right: 20px;
+    @media only screen and (max-width: $breakpoint) {
+      padding: 0;
+    }
+  }
+  h2 {
+    margin: 0;
+    font-family: $title-font, serif;
+    font-size: 18px;
+    color: $color;
+  }
+  h3 {
+    margin-top: 0;
+    font-family: $title-font, serif;
+    font-size: 15px;
+    color: $color;
+  }
+}

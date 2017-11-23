@@ -1,56 +1,13 @@
 .container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50px 1fr 100px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-gap: 10px;
   max-width: 600px;
-  margin: auto;
-}
-
-.project {
-  padding: 5px 0 10px 0;
-}
-
-.project-tags {
-  width: 20%;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
-  font-family: $font, sans-serif;
-  font-size: 15px;
-  color: $color;
-  letter-spacing: 1px;
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  @media only screen and (max-width: $breakpoint) {
-    display: none;
-  }
-}
-
-.project-info {
-  width: 79%;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
-  @media only screen and (max-width: $breakpoint) {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  p {
-    padding-right: 20px;
-    @media only screen and (max-width: $breakpoint) {
-      padding: 0;
-    }
-  }
-  h2 {
-    margin: 0;
-    font-family: $title-font, serif;
-    font-size: 18px;
-    color: $color;
-  }
-  h3 {
-    margin-top: 0;
-    font-family: $title-font, serif;
-    font-size: 15px;
-    color: $color;
-  }
+  margin: 0 auto;
+  height: 100vh;
 }

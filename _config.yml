@@ -1,9 +1,9 @@
 # Where things are
 source:      .
 destination: ./_site
-plugins_dir:     ./_plugins
-layouts_dir:     ./_layouts
-data_dir: ./_data
+plugins_dir: ./_plugins
+layouts_dir: ./_layouts
+data_dir:    ./_data
 collections: null
 
 # Handling Reading
@@ -22,7 +22,7 @@ unpublished: false
 
 # Plugins
 whitelist: []
-gems:      []
+plugins:      []
 
 # Conversion
 markdown:    kramdown
@@ -42,7 +42,7 @@ host:    127.0.0.1
 baseurl: "" # does not include hostname
 
 # Outputting
-permalink:     date
+permalink:     pretty
 paginate_path: /page:num
 timezone:      null
 
