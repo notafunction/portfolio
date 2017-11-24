@@ -3,5 +3,11 @@ layout: base
 title: Matt Latham | Blog
 ---
 <section>
-  <h1>this is the blog</h1>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
