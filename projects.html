@@ -9,12 +9,12 @@ layout: base
       <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.name }}</a>
     </h2>
     <div class="project__desc">
-      <p>{{ project.description }}</p>
+      {{ project.description }}
     </div>
     <div class="project__tags">
       <h3>Built using</h3>
       {% for tag in project.tags %}
-        <img src="/assets/img/{{ tag }}.svg" class="icon tag" alt="{{ tag }}" title="{{ tag }}"/>
+        <img src="/assets/icons/{{ tag }}.svg" class="icon tag" alt="{{ tag }}" title="{{ tag }}"/>
       {% endfor %}
     </div>
   </div>

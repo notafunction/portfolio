@@ -1,15 +1,8 @@
-github:
-  username: mlatham85
-  link: https://github.com/notafunction
-
-medium:
-  username: mattlatham
-  link: https://medium.com/@mattlatham
-
-twitter:
-  username: jadget
-  link: https://twitter.com/jadget
-
-linkedin:
-  username:
-  link: https://www.linkedin.com/in/mattjlatham
+- name: github
+  url: https://github.com/notafunction
+- name: medium
+  url: https://medium.com/@mattlatham
+- name: twitter
+  url: https://twitter.com/jadget
+- name: linkedin
+  url: https://www.linkedin.com/in/mattjlatham

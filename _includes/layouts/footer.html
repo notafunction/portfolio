@@ -1,17 +1,10 @@
 <footer>
   <div class="social">
-    <a href="{{ site.data.social.github.link }}">
-      <img src="/assets/img/github.svg" class="icon social__icon" id="github" />
-    </a>
-    <a href="{{ site.data.social.twitter.link }}">
-      <img src="/assets/img/twitter.svg" class="icon social__icon" id="twitter" />
-    </a>
-    <a href="{{ site.data.social.linkedin.link }}">
-      <img src="/assets/img/linkedin.svg" class="icon social__icon" id="linkedin" />
-    </a>
-    <a href="{{ site.data.social.medium.link }}">
-      <img src="/assets/img/medium.svg" class="icon social__icon" id="medium" />
-    </a>
+    {% for item in site.data.social %}
+      <a href="{{ item.url }}">
+        <img src="/assets/icons/{{ item.name }}.svg" class="icon social__icon" id="{{ item.name }}" />
+      </a>
+    {% endfor %}
   </div> 
   <small>stuff & things by <a href="http://matt.latham.codes">matt latham</a></small>
 </footer>
