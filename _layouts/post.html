@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lora:700|Montserrat:300" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet">
+  <title>{{ page.title }} | Matt Latham</title>
+  {% include layouts/meta.html %}
+</head>
+
+<body>
+  <div class="container">
+    {% include layouts/header.html %}
+    <main>
+      <h1>{{ page.title }}</h1>
+       {% assign words = content | number_of_words %}
+      <div>
+        <small>{{ words | divided_by:180 }} minute read</small>
+      </div>
+      <div>
+        <small>{{ page.date | date: '%B %d, %Y' }}</small>
+      </div>
+      {{ content }}
+    </main>
+    {% include layouts/footer.html %}
+  </div>
+</body>
+
+</html>
