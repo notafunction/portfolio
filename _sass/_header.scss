@@ -23,6 +23,9 @@ header {
   .logo {
     font-family: $logo-font;
     font-size: 26px;
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
   }
 
 }
