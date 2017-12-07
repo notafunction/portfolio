@@ -86,4 +86,4 @@ npm run build && forever restart server.js
 
 Forever is a package to keep your node apps persistent.
 
-It can be argued that using git in this way in an anti-pattern, and that’s true. Git is not a deployment tool, and should not be used in large applications. However, simplifying your workflow for those smaller projects is a great feeling.
+It can be argued that using git in this way is an anti-pattern, and that’s true. Git is not a deployment tool, and should not be used in large applications. However, simplifying your workflow for those smaller projects is great!
