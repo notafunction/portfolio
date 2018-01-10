@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  {% include analytics.html %}
+  {% include gtm.html %}
   <link href="https://fonts.googleapis.com/css?family=Lora:700|Montserrat:300" rel="stylesheet">
   <link href="/css/main.css" rel="stylesheet">
   <title>{{ page.title }} | Matt Latham</title>
@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  {% include noscript.html %}
   <div class="container">
     {% include layouts/header.html %}
     <main>
