@@ -4,5 +4,5 @@
   url: '/projects/'
 - name: now
   url: '/now/'
-- name: blog
-  url: '/blog/'
+# - name: blog
+#   url: '/blog/'
