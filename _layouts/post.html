@@ -2,17 +2,13 @@
 <html>
 
 <head>
-  {% include gtm.html %}
-  <link href="https://fonts.googleapis.com/css?family=Lora:700|Montserrat:300" rel="stylesheet">
-  <link href="/css/main.css" rel="stylesheet">
-  <title>{{ page.title }} | Matt Latham</title>
-  {% include layouts/meta.html %}
+  {% include base/head.html %}
 </head>
 
 <body>
-  {% include noscript.html %}
+  {% include base/analytics_body.html %}
   <div class="container">
-    {% include layouts/header.html %}
+    {% include base/header.html %}
     <main>
       <h1>{{ page.title }}</h1>
        {% assign words = content | number_of_words %}
@@ -24,7 +20,7 @@
       </div>
       {{ content }}
     </main>
-    {% include layouts/footer.html %}
+    {% include base/footer.html %}
   </div>
 </body>
 
