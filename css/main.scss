@@ -2,49 +2,11 @@
 ---
 @import 'variables';
 @import 'mixins';
+@import 'base';
 @import 'typography';
 @import 'icons';
 @import 'grid';
-@import 'header';
+@import 'nav';
 @import 'footer';
 @import 'projects';
 @import 'blog';
-
-body {
-  font-family: $font, sans-serif;
-  background: $bg-color;
-  color: $color;
-  margin: 0;
-  text-rendering: optimizeLegibility;
-  animation: fadein 0.5s ease;
-  @media screen and (max-width: 620px) {
-    padding: 0 10px;
-  }
-}
-
-main {
-  grid-area: main;
-}
-
-a {
-  color: $link-color;
-  text-decoration: none;
-  transition: color .25s;
-  &:hover {
-    color: $link-hover-color;
-    transition: color .25s;
-  }
-}
-
-section {
-  @media only screen and (max-width: $breakpoint) {
-    margin-bottom: 40px;
-  }
-}
-
-.intro {
-  p {
-    line-height: 2.5rem;
-    font-size: 24px;
-  }
-}

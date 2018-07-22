@@ -1,0 +1,19 @@
+html {
+    font-size: $base-font-size;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font, $fallback-font;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+}
