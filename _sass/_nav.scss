@@ -1,3 +1,6 @@
+// Number of nav items
+$nav-items: 4;
+
 .burger {
     $block: &;
     position: absolute;
@@ -86,7 +89,6 @@
     $block: &;
     position: absolute;
     display: flex;
-    justify-content: center;
     align-items: center;
     top: 0;
     right: 0;
@@ -100,9 +102,8 @@
     will-change: opacity;
     transition: opacity .2s ease-in-out;
 
-    &__wrapper {
-        display: flex;
-        width: 80%;
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
     }
 
     &--open {
@@ -112,9 +113,64 @@
 }
 
 .nav-link {
-    display: block;
+    $block: &;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    padding: 2rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    transition: all .2s ease-in-out;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+    }
+
+    &:hover {
+        background-color: lighten(salmon, 5%);
+    }
 
     &__icon {
+        max-width: 10rem;
+        max-height: 100%;
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+        transition: all .2s ease-in-out;
 
+        .nav--open & {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    &__text-wrapper {
+        overflow: hidden;
+        display: inline-block;
+        margin-top: 2rem;
+    }
+
+    &__text {
+        display: inline-block;
+        transform: translate3d(0, 100%, 0);
+        transition: all .4s ease-in;
+        text-transform: uppercase;
+
+        .nav--open & {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @for $i from 0 to $nav-items {
+        &:nth-child(#{$i + 1}) {
+            #{$block}__icon {
+                transition-delay: #{$i / 10}s;
+            }
+
+            #{$block}__text {
+                transition-delay: #{$i / 10}s;
+            }
+        }
     }
 }
